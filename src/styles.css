@@ -1,0 +1,72 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#popup-root {
+  position: relative;
+  z-index: 999;
+}
+
+.active {
+  color: rgba(255, 0, 0, 0.8);
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.section {
+  margin: -50px auto;
+  width: 912px;
+  height: 912px;
+}
+
+.book {
+  padding: 200px 60px 0px 0px;
+  overflow: hidden;
+  display: flex;
+  gap: 50px;
+}
+
+.loader {
+  width: 120px;
+  height: 20px;
+  background:
+    linear-gradient(#1e90ff 0 0) left -40px top 0/40px 20px,
+    linear-gradient(#ddd 0 0) center/100% 50%;
+  background-repeat: no-repeat;
+  animation: l5 1s infinite linear;
+  margin: 0 auto;
+}
+@keyframes l5 {
+  100% {
+    background-position:
+      right -40px top 0,
+      center;
+  }
+}
